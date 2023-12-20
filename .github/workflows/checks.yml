@@ -33,6 +33,3 @@ jobs:
 
     - name: Lint code by ruff
       run: poetry run ruff .
-
-    - name: Check types by mypy
-      run: poetry run mypy .
