@@ -7,6 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+discord-py = {extras = ["voice"], version = "^2.3.2"}
 
 
 [tool.poetry.group.dev.dependencies]
@@ -23,6 +24,7 @@ build-backend = "poetry.core.masonry.api"
 select = ["F", "E", "W", "C90",
     "I", "N", "S", "B", "A",
     "ISC", "T20", "Q", "PTH"]
+ignore = ["T201"]
 
 [tool.mypy]
 explicit_package_bases = true
