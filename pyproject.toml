@@ -24,7 +24,3 @@ select = ["F", "E", "W", "C90",
     "I", "N", "S", "B", "A",
     "ISC", "T20", "Q", "PTH"]
 ignore = ["T201"]
-
-[tool.mypy]
-explicit_package_bases = true
-namespace_packages = true
