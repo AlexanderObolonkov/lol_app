@@ -16,8 +16,16 @@ async def on_ready() -> None:
     logger.info(f"User: {bot.user} (ID: {bot.user.id})")
 
 
-@bot.command()
+@bot.command(
+    aliases=["p"],
+    help="This is help",
+    description="This is description",
+    brief="This is brief",
+    enabled=True,
+    hidden=True,
+)
 async def ping(ctx: commands.Context) -> None:
+    """Answers with 'Pong!'"""
     await ctx.send("Pong!")
 
 
